@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,html{
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
+  height: 100vh;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #8EC5FC;
+  background-image: linear-gradient( #dae2f8 , #d6a4a4 );
+}
+
+.app-container {
+  width: 80%;
+ height: 100%;
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.board-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  overflow: hidden; 
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.task-list h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-list.dragging-over {
+  background-color: #e6f7ff;
 }
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  cursor: grab;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  background: rgba( 87, 213, 186, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.task-item.dragging {
+  background-color: #f0f8ff;
+}
+
+.task-item:hover {
+  background-color: #f5f5f5;
+}
+
+.task-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #eeececd4;
+}
+.btn{
+  background: none;
+  border: none;
+}
+.task-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: #45a049;
+}
+/* App.css (or your main CSS file) */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 33%;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border-radius: 37px;
+  border-radius: 8px;
+  border-radius: 8px;
+  background: #e0e0e0;
+  box-shadow:  26px 26px 52px #969696,
+             -26px -26px 52px #ffffff;
+}
+
