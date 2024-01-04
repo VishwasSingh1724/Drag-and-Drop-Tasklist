@@ -11,11 +11,11 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-### Installation
 
 ## Deployed
 # you can visit the website on https://drag-and-drop-tasklist-mvqu.vercel.app/
 
+### Installation
 1. Clone the repository to your local machine:
 
 ```bash
